@@ -49,8 +49,8 @@ eclipsebin/
 RemoteSystemsTempFiles/
 
 config/
-!config/local.properties
-!config/localextensions.xml
-!config/.classpath
+!comm/hybris/config/local.properties
+!comm/hybris/config/localextensions.xml
+!comm/hybris/config/.classpath
 comm/hybris/data/
 
