@@ -49,4 +49,18 @@ eclipsebin/
 RemoteSystemsTempFiles/
 
 comm/hybris/data/
+
+/**/hybris/bin/**/build.xml
+/**/hybris/bin/**/ruleset.xml
+/**/hybris/bin/**/classes/
+/**/hybris/bin/**/extensioninfo.xsd
 /**/hybris/bin/**/gensrc/
+/**/hybris/bin/**/hmc/bin/
+/**/hybris/bin/**/hmc/resources/hmc.xsd
+/**/hybris/bin/**/platformhome.properties
+/**/hybris/bin/**/resources/beans.xsd
+/**/hybris/bin/**/resources/items.xsd
+/**/hybris/bin/**/resources/**/*-testclasses.xml
+/**/hybris/bin/**/resources/**/*-webtestclasses.xml
+/**/hybris/bin/**/src/**/jalo/
+/**/hybris/config/solr/
