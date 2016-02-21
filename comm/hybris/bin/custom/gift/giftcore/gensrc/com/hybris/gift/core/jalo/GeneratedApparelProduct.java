@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at Feb 21, 2016 7:41:36 PM                     ---
+ * --- Generated at Feb 21, 2016 8:54:33 PM                     ---
  * ----------------------------------------------------------------
  */
 package com.hybris.gift.core.jalo;

@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at Feb 21, 2016 7:41:36 PM                     ---
+ * --- Generated at Feb 21, 2016 8:54:33 PM                     ---
  * ----------------------------------------------------------------
  */
 package com.hybris.gift.core.constants;
@@ -24,7 +24,14 @@ public class GeneratedGiftCoreConstants
 	}
 	public static class Attributes
 	{
-		// no constants defined.
+		public static class Customer
+		{
+			public static final String ISINTERNAL = "isInternal".intern();
+		}
+		public static class Product
+		{
+			public static final String INTERNALONLY = "internalOnly".intern();
+		}
 	}
 	public static class Enumerations
 	{

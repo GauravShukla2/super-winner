@@ -49,4 +49,4 @@ eclipsebin/
 RemoteSystemsTempFiles/
 
 comm/hybris/data/
-
+/**/hybris/bin/**/gensrc/

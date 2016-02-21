@@ -455,4 +455,7 @@
 		<property name="rootCategoryCode" value="categories"/>
 	</bean>
 	
+	<bean id="dynamicHybrisCustomerAttributeBean"
+      class="com.hybris.gift.core.model.DynamicHybrisCustomerAttributeBean"/>
+	
 </beans>
