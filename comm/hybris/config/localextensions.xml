@@ -78,6 +78,15 @@
         <extension name="acceleratorfacades" />
         <extension name="acceleratorcms" />
         <extension name="acceleratorstorefrontcommons" />
-                 
+		
+		<extension name="giftfulfilmentprocess"/>
+		<extension name="giftcore"/>
+		<extension name="giftinitialdata"/>
+		<extension name="giftfacades"/>
+		<!-- <extension name="gifttest"/>  -->
+		<extension name="giftstorefront"/>
+		<extension name="giftcockpits"/>
+		
+		
     </extensions>
 </hybrisconfig>

@@ -1,0 +1,5 @@
+# 
+# Import links for the Multi Channel Cockpit (MCC)
+#
+INSERT_UPDATE DynamicLink;code[unique=true];area(code);sortorder;extensionName;parentLink(code);visibleScript;script
+;accelerator-site-links;channel;0;giftcore;webfrontends;"return java.lang.Boolean.TRUE;";"return com.hybris.gift.core.util.MccSiteUrlHelper.getAllSitesAndUrls();"
