@@ -1,0 +1,8 @@
+#Ant properties
+#Tue Dec 01 11:34:08 CET 2015
+builddate=20151201 1134
+description=giftcommerceservices
+name=giftcommerceservices
+vendor=hybris
+version=5.4.0.7
+version.api=5.4.0

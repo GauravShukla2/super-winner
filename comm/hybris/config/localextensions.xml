@@ -87,6 +87,7 @@
 		<extension name="giftstorefront"/>
 		<extension name="giftcockpits"/>
 		
+		<extension name="giftcommerceservices"/>
 		
     </extensions>
 </hybrisconfig>
