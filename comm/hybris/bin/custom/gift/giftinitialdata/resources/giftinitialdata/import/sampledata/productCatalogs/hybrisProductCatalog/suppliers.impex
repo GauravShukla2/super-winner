@@ -1,4 +1,4 @@
-# ImpEx for Importing Suppliers into Merchandise store
+# ImpEx for Importing Suppliers into Gift store
   
 # Macros / Replacement Parameter definitions
 $productCatalog=hybrisProductCatalog

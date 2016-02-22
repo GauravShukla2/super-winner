@@ -1,4 +1,4 @@
-# ImpEx for Importing Product Media into Merchandise store
+# ImpEx for Importing Product Media into Gift store
   
 # Macros / Replacement Parameter definitions
 $productCatalog=hybrisProductCatalog
@@ -15,7 +15,7 @@ $others=others(code, $catalogVersion)
 $data_sheet=data_sheet(code, $catalogVersion)
 $medias=medias(code, $catalogVersion)
 $galleryImages=galleryImages(qualifier, $catalogVersion)
-$siteResource=jar:de.hybris.merchandise.initialdata.setup.InitialDataSystemSetup&/merchandiseinitialdata/import/sampledata/productCatalogs/$productCatalog/images
+$siteResource=jar:com.hybris.gift.initialdata.setup.InitialDataSystemSetup&/giftinitialdata/import/sampledata/productCatalogs/$productCatalog/images
   
 INSERT_UPDATE MediaFolder;qualifier[unique=true];path[unique=true]
 ;images;images

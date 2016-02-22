@@ -1,4 +1,4 @@
-# ImpEx for Importing Products Stock Levels and Warehouses into Merchandise
+# ImpEx for Importing Products Stock Levels and Warehouses into Gift
   
 # Macros / Replacement Parameter definitions
 $productCatalog=hybrisProductCatalog
