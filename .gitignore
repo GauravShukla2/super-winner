@@ -64,3 +64,9 @@ comm/hybris/data/
 /**/hybris/bin/**/resources/**/*-webtestclasses.xml
 /**/hybris/bin/**/src/**/jalo/
 /**/hybris/config/solr/
+
+extensioninfo.xsd
+platformhome.properties
+build.xml
+items.xsd
+beans.xsd
