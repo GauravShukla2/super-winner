@@ -191,4 +191,24 @@
 	</bean>
 
 	<bean id="genderData" class="com.hybris.gift.facades.product.data.GenderData" scope="prototype"/>
+	
+	<bean id="productInternalOnlyPopulator" class="com.hybris.gift.facades.populators.ProductInternalOnlyPopulator"/>
+    <bean id="searchResultProductInternalOnlyPopulator" class="com.hybris.gift.facades.populators.SearchResultProductInternalOnlyPopulator"/>
+     
+    <bean parent="modifyPopulatorList">
+        <property name="list" ref="productConverter"/>
+        <property name="add"  ref="productInternalOnlyPopulator"/>
+    </bean>
+ 
+    <bean parent="modifyPopulatorList">
+        <property name="list" ref="commerceSearchResultProductConverter"/>
+        <property name="add"  ref="searchResultProductInternalOnlyPopulator"/>
+    </bean>
+    
+    <bean id="customerInternalPopulator" class="com.hybris.gift.facades.populators.CustomerInternalPopulator"/>
+ 
+    <bean parent="modifyPopulatorList">
+        <property name="list" ref="customerConverter"/>
+        <property name="add"  ref="customerInternalPopulator"/>
+    </bean>
 </beans>
