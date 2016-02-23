@@ -217,6 +217,9 @@ INSERT_UPDATE ContentSlotName;name[unique=true];template(uid,$contentCV)[unique=
 ;Footer;;;footer
 ;TopHeaderSlot;;;wide
 ;BottomHeaderSlot;;;wide
+;Section2A;;RandomImageParagraphComponent;narrow
+;Section2B;;RandomImageParagraphComponent;narrow
+;Section2C;;RandomImageParagraphComponent;wide
  
 INSERT_UPDATE ContentSlotName;name[unique=true];template(uid,$contentCV)[unique=true][default='LandingPage3Template'];validComponentTypes(code);compTypeGroup(code)
 ;SiteLogo;;;logo
@@ -427,6 +430,12 @@ INSERT_UPDATE ContentSlot;$contentCV[unique=true];uid[unique=true];name;active
 ;;CenterLeftContentSlot;Center Left Content Slot;true
 ;;CenterRightContentSlot;Center Right Content Slot;true
 ;;EmptyCartMiddleContent;Empty Cart Middle Content;true
+
+INSERT_UPDATE ContentSlotName;name[unique=true];template(uid,$contentCV)[unique=true][default='LandingPage2Template'];validComponentTypes(code);compTypeGroup(code)
+;Section2A;;RandomImageParagraphComponent;narrow
+;Section2B;;RandomImageParagraphComponent;narrow
+;Section2C;;RandomImageParagraphComponent;wide
+
 # Bind Content Slots to Page Templates
 INSERT_UPDATE ContentSlotForTemplate;$contentCV[unique=true];uid[unique=true];position[unique=true];pageTemplate(uid,$contentCV)[unique=true][default='ProductDetailsPageTemplate'];contentSlot(uid,$contentCV)[unique=true];allowOverwrite
 ;;SiteLogo-ProductDetails;SiteLogo;;SiteLogoSlot;true
@@ -734,3 +743,9 @@ INSERT_UPDATE CategoryPage;$contentCV[unique=true];uid[unique=true];name;masterT
 ;;productList;Product List;ProductListPageTemplate;true;
 ;;productGrid;Product Grid;ProductGridPageTemplate;false;
 ;;category;Default Category Page;CategoryPageTemplate;false;
+
+## NEW CMS COMPONENT - RANDOM PICTURE ----------------------------------------------------
+INSERT_UPDATE RandomImageParagraphComponent;$contentCV[unique=true];uid[unique=true];name;&componentRef;topic(code);width;height
+;;RandomImage1;Random Image;RandomImage1;fashion;228;228
+;;RandomImage2;Random Image;RandomImage2;people;228;228
+;;RandomImage3;Random Image;RandomImage3;nightlife;228;228
