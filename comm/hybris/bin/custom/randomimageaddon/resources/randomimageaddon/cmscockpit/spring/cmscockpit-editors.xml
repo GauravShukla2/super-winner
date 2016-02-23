@@ -40,11 +40,7 @@
 					<property name="label" value="textEditor"/>
 				</bean>
 				<bean class="de.hybris.platform.cockpit.model.meta.DefaultPropertyEditorDescriptor">
-					<property name="editorType" value="INTEGER">
-						<map>
-							<entry key="pixelNumberEditor" value="de.hybris.platform.addons.randomimageaddon.cmscockpit.editor.PixelNumberEditor"/>
-						</map>
-					</property>
+					<property name="editorType" value="INTEGER"/>
 					<property name="defaultMode" value="single"/>
 					<property name="defaultEditor" value="de.hybris.platform.cockpit.model.editor.impl.DefaultIntegerUIEditor"/>
 					<property name="defaultSearchMode" value="search"/>
@@ -53,6 +49,7 @@
 							<entry key="multi" value="de.hybris.platform.cockpit.model.editor.impl.GenericCollectionUIEditor"/>
 							<entry key="range" value="de.hybris.platform.cockpit.model.editor.impl.GenericRangeUIEditor"/>
 							<entry key="search" value="de.hybris.platform.cockpit.model.editor.search.impl.DefaultIntConditionUIEditor"/>
+							<entry key="pixelNumberEditor" value="de.hybris.platform.addons.randomimageaddon.cmscockpit.editor.PixelNumberEditor"/>
 						</map>
 					</property>
 					<property name="label" value="integerEditor"/>
