@@ -19,6 +19,7 @@
 		<requires-extension name="hmc"/>
 		<requires-extension name="addonsupport"/>
 		<requires-extension name="cms2"/>
+		<requires-extension name="giftcockpits"/>
 
 		<coremodule generated="true" manager="com.hybris.platform.addons.randomimageaddon.jalo.RandomimageaddonManager" packageroot="com.hybris.platform.addons.randomimageaddon"/>
 

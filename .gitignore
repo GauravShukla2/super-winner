@@ -71,3 +71,12 @@ build.xml
 items.xsd
 beans.xsd
 addons
+
+/**/hybris/bin/**/randomimageaddon/web/webroot/cockpit/
+/**/hybris/bin/**/randomimageaddon/web/webroot/cscockpit/
+/**/hybris/bin/**/randomimageaddon/web/webroot/cmscockpit/
+
+/**/hybris/bin/**/giftstorefront/web/webroot/cockpit/
+/**/hybris/bin/**/giftstorefront/web/webroot/cscockpit/
+/**/hybris/bin/**/giftstorefront/web/webroot/cmscockpit/
+/**/hybris/bin/**/giftstorefront/web/webroot/productcockpit/
