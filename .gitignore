@@ -21,7 +21,7 @@ tmp/
 *.swp
 *~.nib
 *.DS_Store
-.settings/
+#.settings/
 .loadpath
 ext-channel/
 ext-accelerator/

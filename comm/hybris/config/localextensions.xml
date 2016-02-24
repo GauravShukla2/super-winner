@@ -89,6 +89,7 @@
 		
 		<extension name="giftcommerceservices"/>
 		<extension name="randomimageaddon"/>
+		<extension name="giftcheckoutaddon" />
 		
     </extensions>
 </hybrisconfig>
