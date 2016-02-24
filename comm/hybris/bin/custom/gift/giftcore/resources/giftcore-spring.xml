@@ -478,7 +478,13 @@
 	<bean id="hybrisBrandCategoryNameValueProvider" parent="abstractCategoryNameValueProvider">
 		<property name="categorySource" ref="hybrisBrandCategorySource" />
 	</bean>
-	
-	 <bean id="customerInternalFlagValueProvider" class="com.hybris.gift.core.btg.condition.operand.valueprovider.CustomerInternalFlagValueProvider"/>
+
+	<bean id="customerInternalFlagValueProvider"
+		class="com.hybris.gift.core.btg.condition.operand.valueprovider.CustomerInternalFlagValueProvider" />
+
+	<bean id="hybrisPointOfServiceFacetDisplayNameProvider"
+		class="com.hybris.gift.core.search.solrfacetsearch.provider.impl.PointOfServiceFacetDisplayNameProvider">
+		<property name="pointOfServiceService" ref="pointOfServiceService" />
+	</bean>
 	
 </beans>
