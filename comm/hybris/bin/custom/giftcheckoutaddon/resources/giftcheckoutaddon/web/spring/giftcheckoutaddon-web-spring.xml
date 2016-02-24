@@ -45,15 +45,15 @@
 		<property name="add" ref="getGiftcheckoutaddonBeforeViewHandler" />
 	</bean>
 
-	<alias name="merchandiseMultiFlowCheckoutGroup" alias="merchandiseMultiFlowCheckoutGroup" />
-	<bean id="merchandiseMultiFlowCheckoutGroup"
+	<alias name="giftMultiFlowCheckoutGroup" alias="giftMultiFlowCheckoutGroup" />
+	<bean id="giftMultiFlowCheckoutGroup"
 		class="de.hybris.platform.acceleratorstorefrontcommons.checkout.steps.CheckoutGroup">
 		<property name="groupId" value="giftMultiFlowCheckoutGroup" />
 		<property name="checkoutStepMap">
 			<map merge="true">
 				<entry key="multi" value-ref="multiStepCheckout" />
 				<entry key="delivery-address" value-ref="deliveryAddressCheckoutStep" />
-				<entry key="delivery-method" value-ref="deliveryMethodForMerchandiseMultiFlow" />
+				<entry key="delivery-method" value-ref="deliveryMethodForGiftMultiFlow" />
 				<entry key="pickup-location" value-ref="pickupLocationCheckoutStep" />
 				<entry key="gift-wrap" value-ref="giftWrapCheckoutStepForMultiFlow" />
 				<entry key="payment-method" value-ref="paymentMethodCheckoutStep" />
@@ -73,7 +73,7 @@
 		<property name="checkoutProgressBar">
 			<map merge="true">
 				<entry key="1" value-ref="deliveryAddressCheckoutStep" />
-				<entry key="2" value-ref="deliveryMethodForMerchandiseMultiFlow" />
+				<entry key="2" value-ref="deliveryMethodForGiftMultiFlow" />
 				<entry key="3" value-ref="giftWrapCheckoutStepForMultiFlow" />
 				<entry key="4" value-ref="paymentMethodCheckoutStep" />
 				<entry key="5" value-ref="defaultSummaryCheckoutStep" />
@@ -99,9 +99,9 @@
 	</bean>
 
 
-	<alias name="deliveryMethodForMerchandiseMultiFlow" alias="deliveryMethodForMerchandiseMultiFlow" />
-	<bean id="deliveryMethodForMerchandiseMultiFlow" parent="checkoutStep">
-		<property name="checkoutGroup" ref="merchandiseMultiFlowCheckoutGroup" />
+	<alias name="deliveryMethodForGiftMultiFlow" alias="deliveryMethodForGiftMultiFlow" />
+	<bean id="deliveryMethodForGiftMultiFlow" parent="checkoutStep">
+		<property name="checkoutGroup" ref="giftMultiFlowCheckoutGroup" />
 		<property name="checkoutStepValidator" ref="deliveryMethodCheckoutValidator" />
 		<property name="transitions">
 			<map merge="true">
