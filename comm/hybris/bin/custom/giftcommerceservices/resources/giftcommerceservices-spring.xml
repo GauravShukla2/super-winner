@@ -56,7 +56,14 @@
 		class="com.hybris.gift.search.providers.GiftProductReviewAverageRatingValueProvider"
 		parent="productReviewAverageRatingValueProvider" />
 
-
+    <bean id="hybridCustomersPrepareInterceptor" class="com.hybris.gift.servicelayer.interceptor.HybridsCustomersPrepareInterceptor">
+        <property name="userGroupDao" ref="userGroupDao"/>
+    </bean>
+ 
+    <bean id="hybridCustomersPrepareInterceptorMapping" class="de.hybris.platform.servicelayer.interceptor.impl.InterceptorMapping">
+        <property name="interceptor" ref="hybridCustomersPrepareInterceptor"/>
+        <property name="typeCode" value="Customer"/>
+    </bean>
 
 
 </beans>

@@ -24,5 +24,10 @@
 		<property name="coreDataImportService" ref="coreDataImportService"/>
 		<property name="sampleDataImportService" ref="sampleDataImportService"/>
 	</bean>
+	
+	    <alias name="giftDataImportService" alias="sampleDataImportService" />
+    <bean id="giftDataImportService"
+        class="com.hybris.gift.initialdata.dataimport.impl.GiftDataImportService"
+        parent="defaultSampleDataImportService" />
 
 </beans>
