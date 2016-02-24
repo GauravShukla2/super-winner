@@ -479,6 +479,6 @@
 		<property name="categorySource" ref="hybrisBrandCategorySource" />
 	</bean>
 	
-	 <bean id="customerInternalFlagValueProvider" class="com.hybris.gift.core.btg.condition.operand.valueprovider.CustomerInternalFlagValueProvider" abstract="true"/>
+	 <bean id="customerInternalFlagValueProvider" class="com.hybris.gift.core.btg.condition.operand.valueprovider.CustomerInternalFlagValueProvider"/>
 	
 </beans>
