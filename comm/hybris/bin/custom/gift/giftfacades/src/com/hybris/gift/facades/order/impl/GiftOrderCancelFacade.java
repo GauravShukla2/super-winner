@@ -20,6 +20,7 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Required;
 
 import com.hybris.gift.facades.order.OrderCancelFacade;
+import com.hybris.gift.facades.order.data.OrderCancelResultData;
 
 
 /**

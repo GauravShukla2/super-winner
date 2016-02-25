@@ -5,6 +5,9 @@
 <%@ taglib prefix="theme" tagdir="/WEB-INF/tags/shared/theme" %>
 <%@ taglib prefix="ycommerce" uri="http://hybris.com/tld/ycommercetags" %>
  
+<c:url var="actionUrl" value="${fn:replace(url, '{orderCode}', orderCode)}" scope="page"/>
 <c:if test="${cancellable}">
-        <p><spring:theme code="text.cancellable" text="Cancellable"/></p>
+     <form:form action="${actionUrl}" method="post">
+         <p><button class="form"><spring:theme code="text.cancel" text="Cancel"/></button></p>
+     </form:form>
 </c:if>

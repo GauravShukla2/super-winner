@@ -76,6 +76,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.hybris.gift.facades.order.OrderCancelFacade;
+import com.hybris.gift.facades.order.data.OrderCancelResultData;
 import com.hybris.gift.storefront.controllers.ControllerConstants;
 
 

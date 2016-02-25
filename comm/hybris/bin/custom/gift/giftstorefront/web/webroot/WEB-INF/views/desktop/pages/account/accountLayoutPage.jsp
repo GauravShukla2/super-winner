@@ -10,9 +10,29 @@
 <%@ taglib prefix="common" tagdir="/WEB-INF/tags/desktop/common" %>
 
 <template:page pageTitle="${pageTitle}">
-	<div id="globalMessages">
-		<common:globalMessages/>
-	</div>
+    <div id="globalMessages">
+        <common:globalMessages/>
+ 
+        <c:if test="${not empty orderCancelResult}">
+            <c:choose>
+                <c:when test="${orderCancelResult.success}">
+                    <div class="span-24">
+                        <div class="information_message positive">
+                            <span class="single"></span>
+                            <p><spring:theme code="order.cancel.success" arguments="${orderCancelResult.orderId}"/></p>
+                        </div>
+                    </div>
+                </c:when>
+                <c:otherwise>
+                    <div class="span-24">
+                        <div class="information_message negative">
+                        <p><spring:theme code="order.cancel.failed" arguments="${orderCancelResult.orderId},${orderCancelResult.failReason}"/></p>
+                        </div>
+                    </div>
+                </c:otherwise>
+            </c:choose>
+        </c:if>
+    </div>
 
 	<div class="span-24">
 		<div class="span-4 accountLeftNavigation">
