@@ -256,5 +256,13 @@
 		<property name="add" ref="orderHistoryCancellableFlagPopulator" />
 	</bean>
 
+    <alias name="giftOrderCancelFacade" alias="orderCancelFacade"/>
+    <bean id="giftOrderCancelFacade" class="com.hybris.gift.facades.order.impl.GiftOrderCancelFacade">
+        <property name="baseStoreService" ref="baseStoreService"/>
+        <property name="customerAccountService" ref="customerAccountService"/>
+        <property name="orderCancelService" ref="orderCancelService"/>
+        <property name="userService" ref="userService"/>
+        <property name="modelService" ref="modelService"/>
+    </bean>
 
 </beans>

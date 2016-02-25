@@ -9,7 +9,7 @@
  * Information and shall use it only in accordance with the terms of the
  * license agreement you entered into with hybris.
  *
- *  
+ *
  */
 package com.hybris.gift.storefront.controllers.pages;
 
@@ -49,7 +49,6 @@ import de.hybris.platform.commerceservices.search.pagedata.PageableData;
 import de.hybris.platform.commerceservices.search.pagedata.SearchPageData;
 import de.hybris.platform.servicelayer.exceptions.UnknownIdentifierException;
 import de.hybris.platform.util.Config;
-import com.hybris.gift.storefront.controllers.ControllerConstants;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -75,6 +74,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import com.hybris.gift.facades.order.OrderCancelFacade;
+import com.hybris.gift.storefront.controllers.ControllerConstants;
 
 
 /**
@@ -147,6 +149,21 @@ public class AccountPageController extends AbstractSearchPageController
 
 	@Resource(name = "addressVerificationResultHandler")
 	private AddressVerificationResultHandler addressVerificationResultHandler;
+
+	private static final String REDIRECT_TO_ORDERS = REDIRECT_PREFIX + "/my-account/orders";
+
+	@Resource(name = "orderCancelFacade")
+	private OrderCancelFacade orderCancelFacade;
+
+	@RequestMapping(value = "/order/cancel/{orderCode}", method = RequestMethod.POST)
+	public String orderCancel(@PathVariable("orderCode") final String orderCode, final RedirectAttributes redirectAttributes)
+			throws CMSItemNotFoundException
+	{
+		final OrderData orderDetails = orderFacade.getOrderDetailsForCode(orderCode);
+		final OrderCancelResultData cancelResult = orderCancelFacade.cancelOrder(orderDetails);
+		redirectAttributes.addFlashAttribute("orderCancelResult", cancelResult);
+		return REDIRECT_TO_ORDERS;
+	}
 
 	protected PasswordValidator getPasswordValidator()
 	{
@@ -726,7 +743,7 @@ public class AccountPageController extends AbstractSearchPageController
 
 	/**
 	 * Method checks if address is set as default
-	 * 
+	 *
 	 * @param addressId
 	 *           - identifier for address to check
 	 * @return true if address is default, false if address is not default
