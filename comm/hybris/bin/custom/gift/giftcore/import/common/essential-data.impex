@@ -1,0 +1,3 @@
+
+INSERT_UPDATE ApplicableCmsActionsTypeForCmsComponent;target(code)[unique=true];source(code)[unique=true];
+;JspIncludeComponent;CancelOrderAction;

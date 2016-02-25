@@ -20,7 +20,7 @@ $pickupInStoreMode=BUY_AND_COLLECT
 $customerAllowedToIgnoreSuggestions=true
 $paymentProvider=Mockup
 $promoGrp=hybrisPromoGrp
-$checkoutFlowGroup=defaultCheckoutGroup
+$checkoutFlowGroup=giftMultiPathCheckoutGroup
 
 INSERT_UPDATE PromotionGroup;Identifier[unique=true];
 ;$promoGrp;

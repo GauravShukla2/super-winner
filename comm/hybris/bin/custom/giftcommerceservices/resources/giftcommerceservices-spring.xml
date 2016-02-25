@@ -64,6 +64,9 @@
         <property name="interceptor" ref="hybridCustomersPrepareInterceptor"/>
         <property name="typeCode" value="Customer"/>
     </bean>
+    
+        <alias name="giftOrderCancelStateMappingStrategy" alias="defaultOrderCancelStateMappingStrategy"/>
+    <bean id="giftOrderCancelStateMappingStrategy" class="com.hybris.gift.ordercancel.impl.GiftOrderCancelStateMappingStrategy" scope="prototype"/>
 
 
 </beans>
